@@ -1,58 +1,131 @@
 * {
     box-sizing: border-box;
+    color: darkgrey;
 }
 body {
     margin: 0;
-    padding: 10px;
     height: 100%;
     width: 100%;
     background-color: #154b7c;
 }
 .container {
     display: flex;
-    /* background-color: #09233b; */
-    border-radius: 10px;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto;
 
 }
 .sidenav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 70px;
-    height: 100%;
-    background-color: #09233b
+    height: 100vh;
+    background-color: 	#141833;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
 .nav {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
+.nav div {
+    text-align: center;
+    height: 70px;
+    border-top: 2px rgb(37, 47, 85) solid; 
+}
+.nav div:first-of-type {
+    text-align: center;
+    border: none;
+}
+.nav div:last-of-type {
+    text-align: center;
+    border-bottom: 2px rgb(37, 47, 85) solid; 
+}
+
 .main {
-    background-color: #0c1963;
+    background-color: #181F38;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 100%;
+    height: 100vh;
 }
 .header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 40px;
+    height: 10%;
+    align-items: center;
 }
-.topright, .content {
+.search {
+    padding-left: 2.5%;
+}
+.topright{
     display: flex;
     align-items: center;
+    padding-right: 2.5%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+    padding-bottom: 5%;
 }
 .package {
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    height: 33%;
+    justify-content: space-between;
+}
+.pkgimg {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
 }
 .graph {
-      display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.graph img {
+    width: 100px;
+    height: 100px;
+}
+.graph:active {
+    background: #09233b
 }
 .gauge {
-      display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    height: 33%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color:	#232C49;
+    border-radius: 10px;
 }
-
+.gaugehead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1%;
+}
+.gaugebox {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gauimg {
+    width: 30%;
+    height: 30%;
+}
